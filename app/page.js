@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 
+
+import Footer from "./components/Footer";
+import FAQ from "./components/FAQ";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black flex flex-col">
@@ -11,8 +15,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      {/* Content Spacer to allow scrolling if needed later */}
-      <div className="h-[20vh] bg-black"></div> 
+      <FAQ />
+      <Footer />
     </main>
   );
 }

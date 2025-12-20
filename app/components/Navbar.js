@@ -22,7 +22,10 @@ const Navbar = () => {
         <div className="text-3xl lg:text-4xl font-bold tracking-[0.3em] font-oswald">
           <Link href="/" className="flex items-center gap-3">
             <Image src="/logo.jpg" alt="Gymnation Logo" width={50} height={50} className="rounded-full" />
-            <span>Gymnation</span>
+            <div className="flex flex-col justify-center gap-1">
+              <span>Gymnation</span>
+              <span className="lg:hidden text-[10px] tracking-[0.2em] leading-tight text-gray-300">WINTER ARC CHALLENGE</span>
+            </div>
           </Link>
         </div>
 
@@ -35,8 +38,7 @@ const Navbar = () => {
 
         {/* Right Side / Mobile Controls */}
         <div className="flex items-center gap-4 lg:gap-8">
-          <span className="text-sm lg:text-base font-normal text-gray-300 cursor-pointer hover:text-white">FAQs</span>
-          
+          <Link href="#faq" className="text-sm lg:text-base font-normal text-gray-300 cursor-pointer hover:text-white uppercase tracking-wider">FAQs</Link>          
           {/* Mobile Menu Button */}
           <button className="lg:hidden text-white" onClick={toggleMenu}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -46,14 +48,20 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-black border-t border-gray-800 flex flex-col items-center py-8 space-y-6 animate-in slide-in-from-top-5">
-          <div className="text-xl font-oswald tracking-[0.2em] font-bold text-white uppercase text-center px-4">
-             WINTER ARC CHALLENGE
-          </div>
-          <div className="flex flex-col gap-4 mt-4 w-3/4">
-             <a href="#" className="bg-[#FFE600] text-center text-black px-4 py-3 uppercase font-bold font-oswald">
-                FIND MY RACE
+        <div className="lg:hidden absolute top-full left-0 w-full bg-black border-t border-gray-800 flex flex-col items-center py-8 space-y-6 animate-in slide-in-from-top-5 h-screen">
+
+          <div className="flex flex-col gap-4 mt-4 w-3/4 text-center font-oswald font-bold">
+             
+              <a href="#about" onClick={() => setIsOpen(false)} className="bg-black text-[#FFE600] border border-[#FFE600] px-4 py-3 uppercase hover:bg-[#FFE600] hover:text-black transition-colors">
+                About
               </a>
+              <a href="#contact" onClick={() => setIsOpen(false)} className="bg-[#FFE600] text-black px-4 py-3 uppercase hover:bg-yellow-400 transition-colors">
+                Register Now
+              </a>
+               <a href="tel:+916363735900" onClick={() => setIsOpen(false)} className="bg-[#FFE600] text-black px-4 py-3 uppercase hover:bg-yellow-400 transition-colors">
+                +91 6363 735 900
+              </a>
+            
           </div>
         </div>
       )}

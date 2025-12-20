@@ -34,11 +34,6 @@ const Hero = () => {
            Wait, looking at desktop screenshot, there is NO bottom banner.
            Mobile screenshot HAS bottom banner.
         */}
-        <div className="lg:hidden absolute bottom-0 left-0 w-full bg-[#FFE600] py-6 px-4 text-center">
-            <h2 className="text-2xl font-bold font-oswald text-black uppercase leading-none">
-                Watch the Hyrox <br/> Livestreams
-            </h2>
-        </div>
 
       </div>
     </div>
