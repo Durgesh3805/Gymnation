@@ -14,8 +14,31 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "HYROX | The World Series of Fitness Racing",
-  description: "HYROX is the fitness race for Every Body. Compete, train, and find your race.",
+  metadataBase: new URL('https://gymnation.vercel.app'), // Placeholder, replace with actual domain if known
+  title: {
+    default: "Gymnation | Winter Arc Challenge",
+    template: "%s | Gymnation"
+  },
+  description: "Join Gym Nation's Winter Arc Challenge - the flagship hybrid fitness event celebrating its third anniversary. A high-intensity competition combining powerlifting and circuit training. Test your strength, endurance, and discipline.",
+  keywords: ["Gymnation", "Winter Arc Challenge", "Fitness Race", "Hyrox", "Powerlifting", "Circuit Training", "Gym Event", "Fitness Competition"],
+  authors: [{ name: "Gymnation" }],
+  openGraph: {
+    title: "Gymnation | Winter Arc Challenge",
+    description: "Join Gym Nation's Winter Arc Challenge. A high-intensity hybrid fitness event combining powerlifting and circuit training.",
+    url: 'https://gymnation.vercel.app',
+    siteName: 'Gymnation',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Gymnation | Winter Arc Challenge",
+    description: "The ultimate test of strength and endurance. Join the Winter Arc Challenge.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
