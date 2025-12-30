@@ -55,7 +55,7 @@ const Navbar = () => {
               <a href="#about" onClick={() => setIsOpen(false)} className="bg-black text-[#FFE600] border border-[#FFE600] px-4 py-3 uppercase hover:bg-[#FFE600] hover:text-black transition-colors">
                 About
               </a>
-              <a href="#contact" onClick={() => setIsOpen(false)} className="bg-[#FFE600] text-black px-4 py-3 uppercase hover:bg-yellow-400 transition-colors">
+              <a href="https://forms.gle/oGHKLKTHB4DjamtDA" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="bg-[#FFE600] text-black px-4 py-3 uppercase hover:bg-yellow-400 transition-colors">
                 Register Now
               </a>
                <a href="tel:+916363735900" onClick={() => setIsOpen(false)} className="bg-[#FFE600] text-black px-4 py-3 uppercase hover:bg-yellow-400 transition-colors">
