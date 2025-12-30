@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Gymnation | Winter Arc Challenge",
+    title: "Gym Nation | Winter Arc Challenge",
     description: "The ultimate test of strength and endurance. Join the Winter Arc Challenge.",
   },
   robots: {
