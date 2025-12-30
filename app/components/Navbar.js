@@ -24,7 +24,7 @@ const Navbar = () => {
             <Image src="/logo.jpg" alt="Gymnation Logo" width={50} height={50} className="rounded-full" />
             <div className="flex flex-col justify-center gap-1">
               <span>Gym Nation</span>
-              <span className="lg:hidden text-[10px] tracking-[0.2em] leading-tight text-gray-300">WINTER ARC CHALLENGE</span>
+              <span className="lg:hidden text-[10px] tracking-[0.2em] leading-tight text-gray-300"><em>GET IN, GET FIT</em></span>
             </div>
           </Link>
         </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden lg:flex flex-1 justify-center items-center">
           <span className="font-oswald text-xl lg:text-xl tracking-[0.5em] font-bold text-white uppercase whitespace-nowrap">
-            GET IN, GET FIT
+            <em>GET IN, GET FIT</em>
           </span>
         </div>
 
