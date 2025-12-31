@@ -74,7 +74,7 @@ const FAQ = () => {
       question: "2. Is there an entry fee for the competition?",
       answer: (
         <span>
-As mentioned in our promotion, a <strong className="text-white">registration fee of ₹199</strong> is applicable for the competition. Pre-registration is mandatory to secure your slot in the Bench Press and Circuit rounds.
+As mentioned in our promotion, a <strong className="text-white">registration fee of ₹200</strong> is applicable for the competition. Pre-registration is mandatory to secure your slot in the Bench Press and Circuit rounds.
         </span>
       ),
       isOpen: openIndexChallenge === 1,

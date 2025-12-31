@@ -52,7 +52,7 @@ const About = () => {
             </li>
             <li className="flex gap-4">
               <span className="text-[#FFE600] font-bold text-xl">/</span>
-              <p>The registration fee for the Winter Arc Challenge is <b>₹199,</b> payable before or during the competition. Payments can be made via UPI to +91 63637 35900 or directly at the gym premises. Participants who pay via UPI are requested to attach the payment screenshot during registration or share it via WhatsApp to the same number. Official receipts can be collected from the gym either before the event or on the event day.              </p>
+              <p>The registration fee for the Winter Arc Challenge is <b>₹200,</b> payable before or during the competition. Payments can be made via UPI to +91 63637 35900 or directly at the gym premises. Participants who pay via UPI are requested to attach the payment screenshot during registration or share it via WhatsApp to the same number. Official receipts can be collected from the gym either before the event or on the event day.              </p>
             </li>
           </ul>
         </div>
